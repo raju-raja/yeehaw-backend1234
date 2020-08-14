@@ -12,7 +12,6 @@ from flask_cors import CORS, cross_origin
 # initializes app
 app = Flask(__name__)
 
-app.config['CORS_HEADERS'] = 'Content-Type'
 
 # initializes database
 # basedir = os.path.abspath(os.path.dirname(__file__))
@@ -24,7 +23,7 @@ CORS(app)
 
 @app.route("/") 
 def home_view(): 
-		return flask.jsonify(
-            "hello" : "world"
-        )
+    return flask.jsonify(
+        "hello" : "world"
+    )
 
