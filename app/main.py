@@ -24,5 +24,7 @@ CORS(app)
 
 @app.route("/") 
 def home_view(): 
-		return "hey friends"
+		return flask.jsonify(
+            "hello" : "world"
+        )
 
