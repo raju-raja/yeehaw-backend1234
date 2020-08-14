@@ -2,12 +2,12 @@ import os
 import json
 import flask
 import flask_cors
-import flask_sqlalchemy
+# import flask_sqlalchemy
 import datetime
 
 from flask import Flask, request, jsonify, session,make_response, current_app, render_template, json
 from flask_cors import CORS, cross_origin
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 
 # initializes app
 app = Flask(__name__)
