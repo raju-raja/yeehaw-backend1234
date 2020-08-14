@@ -15,8 +15,8 @@ app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 # initializes database
-basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir,'db.sqlite')
+# basedir = os.path.abspath(os.path.dirname(__file__))
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir,'db.sqlite')
 
 app.config.from_object(__name__)
 
