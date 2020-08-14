@@ -18,14 +18,15 @@ app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir,'db.sqlite')
 
 app.config.from_object(__name__)
-app.config['CORS_HEADERS'] = 'Content-Type'
 
+app.config['SECRET_KEY'] = 'yosafdyousfodjasodkj'
+app.config['CORS_HEADERS'] = 'Content-Type'
 cors = CORS(app)
 
 @app.route("/") 
 @cross_origin()
 def home_view(): 
     return flask.jsonify(
-        "hello" : "world"
+        hello= "world"
     )
 
