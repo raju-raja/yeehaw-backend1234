@@ -24,7 +24,6 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 cors = CORS(app)
 
 @app.route("/") 
-@cross_origin()
 def home_view(): 
     return flask.jsonify(
         hello= "world"
