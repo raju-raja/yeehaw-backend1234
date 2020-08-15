@@ -30,3 +30,9 @@ def home_view():
         hello= "world"
     )
 
+@app.route("/test") 
+@cross_origin()
+def home_view1(): 
+    return flask.jsonify(
+        hello= "test"
+    )
